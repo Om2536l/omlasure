@@ -23,6 +23,13 @@
         justify-content: space-between;
         align-items: center;
     }
+.dark-mode {
+        --bg: #1a1a1a;
+        --card-bg: #2a2a2a;
+        --text-dark: #f8f8f8;
+        --text-light: #ddd;
+    }
+
     .logo {
         font-size: 24px;
         font-weight: bold;
@@ -175,4 +182,5 @@
         background: #333;
         margin-top: 40px;
     }
+
 
