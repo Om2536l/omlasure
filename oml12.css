@@ -30,6 +30,17 @@
         --text-light: #ddd;
     }
 
+#toggleDark {
+        background: white;
+        color: var(--primary);
+        padding: 8px 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        border: none;
+        font-weight: bold;
+    }
+
+
     .logo {
         font-size: 24px;
         font-weight: bold;
@@ -182,5 +193,6 @@
         background: #333;
         margin-top: 40px;
     }
+
 
 
