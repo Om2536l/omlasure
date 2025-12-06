@@ -146,20 +146,23 @@
         margin-top: 10px;
     }
 
-    .contact-icons {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-    }
-    .contact-icons a {
-        text-decoration: none;
-        padding: 15px;
-        background: white;
-        border-radius: 50%;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-        transition: 0.3s;
-        font-size: 22px;
-    }
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;   /* prevents layout breaking */
+}
+
+.contact-icons a {
+    text-decoration: none;
+    padding: 12px;   /* lower padding to keep icons same size even after adding more */
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: 0.3s;
+    font-size: 20px;   /* slightly reduced to balance layout */
+}
+
     .contact-icons a:hover {
         background: var(--primary);
         color: white;
@@ -172,3 +175,4 @@
         background: #333;
         margin-top: 40px;
     }
+
