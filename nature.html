@@ -18,16 +18,26 @@
             margin-bottom: 20px;
         }
 
-        /* Big image styling */
-        .big-image {
+        /* --- BIG IMAGE IMPROVED --- */
+        .big-image-container {
             width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 10px;
+            max-height: 450px; /* visible height */
+            overflow: hidden;
+            border-radius: 12px;
             border: 3px solid #ccc;
             margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
+        .big-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;        /* professional look */
+            object-position: center;  /* centers image */
+            display: block;
+        }
+
+        /* Gallery */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -57,8 +67,11 @@
     <h1>🌿 My Nature Photography</h1>
 
     <!-- BIG IMAGE AT TOP -->
-    <img src="images/images/IMG_20240217_181226128_MP_AE.jpg" class="big-image" alt="Featured Nature Image">
+    <div class="big-image-container">
+        <img src="images/images/IMG_20240217_181226128_MP_AE.jpg" class="big-image" alt="Featured Nature Image">
+    </div>
 
+    <!-- GALLERY -->
     <div class="gallery">
         <img src="images/images/IMG_20250409_071714429_MP_AE.jpg" alt="Nature Photo 2">
         <img src="images/images/IMG_20250618_080828493_HDR_AE.jpg" alt="Nature Photo 3">
