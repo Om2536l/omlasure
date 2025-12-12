@@ -18,6 +18,16 @@
             margin-bottom: 20px;
         }
 
+        /* Big image styling */
+        .big-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #ccc;
+            margin-bottom: 25px;
+        }
+
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -46,8 +56,10 @@
 
     <h1>🌿 My Nature Photography</h1>
 
+    <!-- BIG IMAGE AT TOP -->
+    <img src="images/images/IMG_20240217_181226128_MP_AE.jpg" class="big-image" alt="Featured Nature Image">
+
     <div class="gallery">
-        <img src="images/images/IMG_20240307_072859509_HDR_AE.jpg" alt="Nature Photo 1">
         <img src="images/images/IMG_20250409_071714429_MP_AE.jpg" alt="Nature Photo 2">
         <img src="images/images/IMG_20250618_080828493_HDR_AE.jpg" alt="Nature Photo 3">
         <img src="images/images/IMG_20250618_110432327_MP_AE.jpg" alt="Nature Photo 4">
@@ -56,11 +68,11 @@
         <img src="images/images/IMG_20231205_192035_339.jpg" alt="Nature Photo 7">
         <img src="images/images/IMG_20240719_182018561_HDR_AE.jpg" alt="Nature Photo 9">
         <img src="images/images/IMG_20241207_220556464_MP_AE.jpg" alt="Nature Photo 10">
-         <img src="images/images/IMG_20250426_180502643_MP_AE.jpg" alt="Nature Photo 11">
-        
+        <img src="images/images/IMG_20250426_180502643_MP_AE.jpg" alt="Nature Photo 11">
     </div>
 
     <a href="index.html" class="back">⬅️ Back to Home</a>
 
 </body>
 </html>
+
